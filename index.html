@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="none">
+        <meta name="viewport" content="width=960, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="./style/main.min.css" rel="stylesheet">
+        <title>Барбершоп «Бородинский»</title>
+    </head>
+    <body class="body body_index">
+        <header class="header">
+            <div class="wrapper">
+                <nav aria-label="Навигация">
+                    <ul class="menu">
+                        <li class="menu__item menu__item_active">
+                            <a class="menu__link">Главная</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="javascript:void(0);">Информация</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="javascript:void(0);">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./price-list.html">Прайс-лист</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="./shop.html">Магазин</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="javascript:void(0);">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="login">
+                    <a class="login__link js-popup-open-button" href="javascript:void(0);"><svg class="icon-login" aria-hidden="true" width="18" height="18"><use xlink:href="./image/sprite/sprite.svg#icon-login"></use></svg> Вход</a>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="logotype">
+                <img class="logotype__image" src="./image/logotype.png" alt="Логотип Барбершоп «Бородинский»" width="376" height="152">
+            </div>
+        </div>
+        <div class="wrapper">
+            <ul class="advantages">
+                <li class="advantages__item">
+                    <div class="advantages__title">Быстро</div>
+                    <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__title">Круто</div>
+                    <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__title">Дорого</div>
+                    <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <section class="index-section index-section_left">
+                <h2 class="index-section__title">Новости</h2>
+                <ul class="news">
+                    <li class="news__item">
+                        <p class="news__description">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+                        <time class="news__time" datetime="2013-09-25">25 сентября</time>
+                    </li>
+                    <li class="news__item">
+                        <p class="news__description">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+                        <time class="news__time" datetime="2013-09-19">19 сентября</time>
+                    </li>
+                </ul>
+                <a class="button" href="javascript:void(0);">Все новости</a>
+            </section>
+            <section class="index-section index-section_right">
+                <h2 class="index-section__title">Фотогалерея</h2>
+                <div class="slider">
+                    <div class="slider__slides js-slider">
+                        <a class="slider__link" href="javascript:void(0);"><img class="slider__slide" src="./image/slide.jpg" alt="Барбершоп «Бородинский»" width="286" height="164"></a>
+                        <a class="slider__link" href="javascript:void(0);"><img class="slider__slide" src="./image/slide.jpg" alt="Барбершоп «Бородинский»" width="286" height="164"></a>
+                    </div>
+                    <div class="slider__buttons">
+                        <button class="button js-slider-prev-button" type="button">Назад</button>
+                        <button class="button js-slider-next-button" type="button">Вперед</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="wrapper">
+            <section class="index-section index-section_left">
+                <h2 class="index-section__title">Контактная&nbsp;информация</h2>
+                <div class="contacts">
+                    <div class="contacts__information">
+                        <p>Барбершоп «Бородинский»<br> Адрес: Санкт-Петербург, Б. Конюшенная, 19/8<br> Телефон: +7 495 666-02-66</p>
+                        <p>Время работы:<br> пн — пт: с 10:00 до 22:00<br> сб — вс: с 10:00 до 19:00</p>
+                    </div>
+                    <div class="contacts__buttons">
+                        <a class="button" href="javascript:void(0);">Как проехать</a>
+                        <a class="button" href="javascript:void(0);">Обратная связь</a>
+                    </div>
+                </div>
+            </section>
+            <section class="index-section index-section_right">
+                <h2 class="index-section__title">Записаться</h2>
+                <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                <form class="booking-form" action="/echo" method="post">
+                    <div class="booking-form__inputs">
+                        <input class="booking-form__input" name="date" type="text" placeholder="Дата" required>
+                        <input class="booking-form__input" name="time" type="text" placeholder="Время" required>
+                        <input class="booking-form__input" name="name" type="text" placeholder="Ваше имя" required>
+                        <input class="booking-form__input" name="phone" type="tel" placeholder="Телефон" required>
+                    </div>
+                    <button class="button button_max" type="submit">Отправить</button>
+                </form>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__column address">
+                    <p class="address__text">Барбершоп «Бородинский»<br> Адрес: Санкт-Петербург, Б. Конюшенная, 19/8<br> <a href="javascript:void(0);">Как нас найти?</a><br> Телефон: +7 495 666-02-66</p>
+                </div>
+                <div class="footer__column social">
+                    <div class="footer__title">Давайте дружить!</div>
+                    <div class="social__links">
+                        <a class="button button_min social__link" href="javascript:void(0);" aria-label="Вконтакте"><svg class="icon-vkontakte" aria-hidden="true" width="24" height="24"><use xlink:href="./image/sprite/sprite.svg#icon-vkontakte"></use></svg></a>
+                        <a class="button button_min social__link" href="javascript:void(0);" aria-label="Фейсбук"><svg class="icon-facebook" aria-hidden="true" width="24" height="24"><use xlink:href="./image/sprite/sprite.svg#icon-facebook"></use></svg></a>
+                        <a class="button button_min social__link" href="javascript:void(0);" aria-label="Инстаграм"><svg class="icon-instagram" aria-hidden="true" width="24" height="24"><use xlink:href="./image/sprite/sprite.svg#icon-instagram"></use></svg></a>
+                    </div>
+                </div>
+                <div class="footer__column copyright">
+                    <div class="footer__title">Pазработано:</div>
+                    <a class="button copyright__link" href="javascript:void(0);">htmlacademy.ru</a>
+                </div>
+            </div>
+        </footer>
+        <section class="popup mfp-hide js-popup">
+            <h2 class="popup__title">Личный кабинет</h2>
+            <p class="popup__description">Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="/echo" method="post">
+                <input class="login-form__input login-form__input_login" name="login" type="text" placeholder="Логин" required>
+                <input class="login-form__input login-form__input_password" name="password" type="password" placeholder="Пароль" required>
+                <div class="login-form__row">
+                    <input class="login-form__checkbox" id="login-form-checkbox" name="remember" type="checkbox" checked>
+                    <label class="login-form__checkbox-label" for="login-form-checkbox">Запомните меня</label>
+                    <a href="javascript:void(0);">Я забыл пароль!</a>
+                </div>
+                <button class="button button_max" type="submit">Войти</button>
+            </form>
+            <button class="popup__close-button js-popup-close-button" type="button" aria-label="Закрыть"></button>
+        </section>
+        <script src="./script/library.min.js" defer></script>
+        <script src="./script/main.min.js" defer></script>
+    </body>
+</html>
