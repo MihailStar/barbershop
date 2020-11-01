@@ -1,0 +1,32 @@
+.booking-form {
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    &__input {
+        flex: none;
+        margin-bottom: 20px;
+        padding: 8px 15px;
+        width: 140px;
+        height: 45px;
+        border: 2px solid $main-color;
+        background-color: lighten($main-color, 97%);
+        color: inherit;
+        text-transform: inherit;
+        font: inherit;
+        transition: border-color $transition-delay;
+
+        &::placeholder {
+            color: inherit;
+        }
+
+        &:focus,
+        &:hover {
+            outline: none;
+            border-color: $accent-color;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{% extends "./_inner-section.html" %}
+
+{% block content %}
+<div class="inner-section__row">
+    <section class="inner-section__column shop-filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+
+        <form class="filters-form" action="/echo" method="post">
+            <fieldset class="filters-form__fieldset">
+                <legend class="filters-form__title">Производители:</legend>
+                <ul class="filters-form__list">
+                    {% for item in manufacturers %}
+                    <li class="filters-form__item">
+                        <input class="filters-form__checkbox" id="{{ item.id }}" name="{{ item.id }}" type="checkbox" checked>
+                        <label class="filters-form__checkbox-label" for="{{ item.id }}">{{ item.title }}</label>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </fieldset>
+
+            <fieldset class="filters-form__fieldset">
+                <legend class="filters-form__title">Группы товаров:</legend>
+                <ul class="filters-form__list">
+                    {% for item in productGroups %}
+                    <li class="filters-form__item">
+                        <input class="filters-form__radio" id="{{ item.id }}" name="groups" type="radio"{{ ' checked' if loop.index === 2 }}>
+                        <label class="filters-form__radio-label" for="{{ item.id }}">{{ item.title }}</label>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </fieldset>
+
+            <button class="button button_inline" type="submit">Показать</button>
+        </form>
+    </section>
+
+    <section class="inner-section__column shop-catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+
+        <div class="shop-catalog__items">
+            {% for item in catalog %}
+            <article class="shop-catalog__item">
+                <img class="shop-catalog__image" src="{{ item.src }}" alt="{{ item.title }}" width="220" height="165">
+                <h3 class="shop-catalog__title">
+                    <a class="shop-catalog__link" href="./product.html"><span class="shop-catalog__description">{{ item.description }}</span><br> {{ item.name }}</a>
+                </h3>
+                <div class="shop-catalog__price-wrapper">
+                    <div class="shop-catalog__price">{{ item.price }} ₽</div>
+                    <a class="button button_inline" href="javascript:void(0);">Купить</a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        {% include "./_pagination.html" %}
+    </section>
+</div>
+{% endblock %}

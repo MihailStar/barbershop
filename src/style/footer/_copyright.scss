@@ -1,0 +1,12 @@
+.copyright {
+    flex: none;
+    width: 140px;
+
+    &__link {
+        &:focus,
+        &:hover {
+            background-color: invert($main-color);
+            color: $main-color;
+        }
+    }
+}

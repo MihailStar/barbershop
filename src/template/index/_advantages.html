@@ -1,0 +1,8 @@
+<ul class="advantages">
+    {% for item in advantages %}
+    <li class="advantages__item">
+        <div class="advantages__title">{{ item.title }}</div>
+        <p class="advantages__description">{{ item.description }}</p>
+    </li>
+    {% endfor %}
+</ul>

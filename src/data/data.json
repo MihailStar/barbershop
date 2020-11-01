@@ -1,0 +1,265 @@
+{
+    "advantages": [
+        {
+            "description": "Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!",
+            "title": "Быстро"
+        },
+        {
+            "description": "Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.",
+            "title": "Круто"
+        },
+        {
+            "description": "Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?",
+            "title": "Дорого"
+        }
+    ],
+    "catalog": [
+        {
+            "alt": "",
+            "description": "Набор для путешествий",
+            "name": "«Baxter of California»",
+            "price": "2 900",
+            "src": "./image/catalog-image-1.jpg"
+        },
+        {
+            "alt": "",
+            "description": "Увлажняющий кондиционер",
+            "name": "«Baxter of California»",
+            "price": "750",
+            "src": "./image/catalog-image-2.jpg"
+        },
+        {
+            "alt": "",
+            "description": "Гель для волос",
+            "name": "«Suavecito»",
+            "price": "290",
+            "src": "./image/catalog-image-3.jpg"
+        },
+        {
+            "alt": "",
+            "description": "Глина для укладки волос",
+            "name": "«American crew»",
+            "price": "500",
+            "src": "./image/catalog-image-4.jpg"
+        },
+        {
+            "alt": "",
+            "description": "Гель для волос",
+            "name": "«American crew»",
+            "price": "300",
+            "src": "./image/catalog-image-5.jpg"
+        },
+        {
+            "alt": "",
+            "description": "Набор для бритья",
+            "name": "«Baxter of California»",
+            "price": "3 900",
+            "src": "./image/catalog-image-6.jpg"
+        }
+    ],
+    "company": {
+        "address": "Санкт-Петербург, Б. Конюшенная, 19/8",
+        "phone": "+7 495 666-02-66",
+        "title": "Барбершоп «Бородинский»"
+    },
+    "manufacturers": [
+        {
+            "id": "baxter-of-california",
+            "title": "Baxter of California"
+        },
+        {
+            "id": "mr-natty",
+            "title": "Mr Natty"
+        },
+        {
+            "id": "suavecito",
+            "title": "Suavecito"
+        },
+        {
+            "id": "malin-goetz",
+            "title": "Malin+Goetz"
+        },
+        {
+            "id": "murrays",
+            "title": "Murray’s"
+        },
+        {
+            "id": "american-crew",
+            "title": "American Crew"
+        }
+    ],
+    "menu": [
+        {
+            "href": "./index.html",
+            "title": "Главная"
+        },
+        {
+            "href": "javascript:void(0);",
+            "title": "Информация"
+        },
+        {
+            "href": "javascript:void(0);",
+            "title": "Новости"
+        },
+        {
+            "href": "./price-list.html",
+            "title": "Прайс-лист"
+        },
+        {
+            "href": "./shop.html",
+            "title": "Магазин"
+        },
+        {
+            "href": "javascript:void(0);",
+            "title": "Контакты"
+        }
+    ],
+    "news": [
+        {
+            "datetime": "2013-09-25",
+            "description": "Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки",
+            "time": "25 сентября"
+        },
+        {
+            "datetime": "2013-09-19",
+            "description": "В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды",
+            "time": "19 сентября"
+        }
+    ],
+    "pages": {
+        "index": {
+            "menuActiveItem": 1,
+            "title": "Барбершоп «Бородинский»"
+        },
+        "priceList": {
+            "breadCrumbs": [
+                {
+                    "href": "./index.html",
+                    "title": "Главная"
+                },
+                {
+                    "title": "Прайс-лист"
+                }
+            ],
+            "menuActiveItem": 4,
+            "title": "Прайс-лист"
+        },
+        "product": {
+            "breadCrumbs": [
+                {
+                    "href": "./index.html",
+                    "title": "Главная"
+                },
+                {
+                    "href": "./shop.html",
+                    "title": "Магазин"
+                },
+                {
+                    "href": "./shop.html",
+                    "title": "Средства для ухода"
+                },
+                {
+                    "title": "Набор для путешествий «Baxter of California»"
+                }
+            ],
+            "menuActiveItem": 5,
+            "title": "Набор для путешествий «Baxter of California»"
+        },
+        "shop": {
+            "breadCrumbs": [
+                {
+                    "href": "./index.html",
+                    "title": "Главная"
+                },
+                {
+                    "href": "./shop.html",
+                    "title": "Магазин"
+                },
+                {
+                    "title": "Средства для ухода"
+                }
+            ],
+            "menuActiveItem": 5,
+            "title": "Средства для ухода"
+        }
+    },
+    "productGroups": [
+        {
+            "id": "group-1",
+            "title": "Бритвенные принадлежности"
+        },
+        {
+            "id": "group-2",
+            "title": "Средства для ухода"
+        },
+        {
+            "id": "group-3",
+            "title": "Аксессуары"
+        }
+    ],
+    "products": [
+        "Baxter of California",
+        "Mr Natty",
+        "Suavecito",
+        "Malin+Goetz"
+    ],
+    "services": [
+        {
+            "price": "1 500",
+            "service": "Стрижка"
+        },
+        {
+            "price": "500",
+            "service": "Стрижка бороды"
+        },
+        {
+            "price": "350",
+            "service": "Накрутка усов"
+        }
+    ],
+    "set": [
+        "Средство для умывания (50 мл)",
+        "Увлажняющий крем (50 мл)",
+        "Крем для бритья (50 мл)",
+        "Крем после бритья, шампунь (50 мл)",
+        "Удобная кожаная косметичка"
+    ],
+    "slides": [
+        {
+            "alt": "",
+            "src": "./image/slide.jpg"
+        },
+        {
+            "alt": "",
+            "src": "./image/slide.jpg"
+        }
+    ],
+    "social": [
+        {
+            "icon": "vkontakte",
+            "title": "Вконтакте"
+        },
+        {
+            "icon": "facebook",
+            "title": "Фейсбук"
+        },
+        {
+            "icon": "instagram",
+            "title": "Инстаграм"
+        }
+    ],
+    "thumbnails": [
+        {
+            "alt": "",
+            "src": "./image/product-thumbnail-1.jpg"
+        },
+        {
+            "alt": "",
+            "src": "./image/product-thumbnail-2.jpg"
+        },
+        {
+            "alt": "",
+            "src": "./image/product-thumbnail-3.jpg"
+        }
+    ]
+}

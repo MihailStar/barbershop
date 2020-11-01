@@ -1,0 +1,35 @@
+.index-section {
+    flex: none;
+    margin-bottom: 35px;
+    padding: 45px 85px 55px;
+    width: 470px;
+    background: lighten($main-color, 97%) url(../image/background-light.png) 0 0 repeat;
+    color: $main-color;
+
+    &_right {
+        position: relative;
+
+        &::after {
+            $width: 8px;
+            position: absolute;
+            top: 50%;
+            left: -$width / 2;
+            width: $width;
+            height: 278px;
+            background: url(../image/divider.png) 0 0 no-repeat;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    &__description {
+        margin-bottom: 10px;
+    }
+}

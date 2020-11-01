@@ -1,0 +1,10 @@
+.contacts {
+    &__information {
+        margin-bottom: 45px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,39 @@
+{% extends "./_inner-section.html" %}
+
+{% block content %}
+<div class="inner-section__row">
+    <section class="inner-section__column product-photos">
+        <h2 class="visually-hidden">Изображения товара</h2>
+
+        <a class="product-photos__link js-zoom" href="./image/product-image-big.jpg"><img class="product-photos__image" src="./image/product-image.jpg" alt="{{ page.title }}" width="460" height="498"></a>
+        <ul class="thumbnails">
+            {% for item in thumbnails %}
+            <li class="thumbnails__item">
+                <a class="thumbnails__link" href="javascript:void(0);"><img class="thumbnails__image" src="{{ item.src }}" alt="{{ page.title }}" width="140" height="149"></a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="inner-section__column product-information">
+        <h2 class="visually-hidden">Описание товара</h2>
+
+        <p class="product-information__availability">Есть в наличии</p>
+        <p class="product-information__vendor-code">Артикул: dexter-ae</p>
+        <p class="product-information__description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+
+        <div class="product-information__price-wrapper">
+            <div class="product-information__price">2 900 ₽</div>
+            <a class="button button_inline" href="javascript:void(0);">Купить</a>
+        </div>
+
+        <h3>В набор входят:</h3>
+
+        <ul>
+            {% for item in set %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>
+{% endblock %}

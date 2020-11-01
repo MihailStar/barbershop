@@ -1,0 +1,12 @@
+.footer {
+    margin-top: 35px;
+    padding: 55px 0;
+    background: url(../image/background-shadow.png) 0 0 repeat-x, lighten($main-color, 14%) url(../image/background-dark.png) 0 0 repeat;
+    color: invert($main-color);
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}

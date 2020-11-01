@@ -1,0 +1,15 @@
+<nav aria-label="Навигация">
+    <ul class="menu">
+        {% for item in menu %}
+        {% if loop.index === page.menuActiveItem %}
+        <li class="menu__item menu__item_active">
+            <a class="menu__link">{{ item.title }}</a>
+        </li>
+        {% else %}
+        <li class="menu__item">
+            <a class="menu__link" href="{{ item.href }}">{{ item.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

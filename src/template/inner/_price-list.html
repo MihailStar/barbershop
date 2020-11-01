@@ -1,0 +1,39 @@
+{% extends "./_inner-section.html" %}
+
+{% block content %}
+<div class="inner-section__promo">
+    <div class="inner-section__promo-title">Истинно мужская классика</div>
+</div>
+
+<div class="inner-section__row">
+    <div class="inner-section__column">
+        <h2>Мы используем только<br> лучшие средства:</h2>
+        <ul class="extended">
+            {% for item in products %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="inner-section__column">
+        <h2>Цены на услуги<br> наших мастеров:</h2>
+        <table class="inner-section__table">
+            {% for item in services %}
+            <tr>
+                <td>{{ item.service }}</td>
+                <td>{{ item.price }} ₽</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+<h2>Несколько слов о нас:</h2>
+<div class="inner-section__row">
+    <div class="inner-section__column">
+        <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+    </div>
+    <div class="inner-section__column">
+        <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+    </div>
+</div>
+{% endblock %}

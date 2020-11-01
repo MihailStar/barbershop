@@ -1,0 +1,39 @@
+.social {
+    flex: none;
+    margin-right: 180px;
+    width: 300px;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        margin-right: 5px;
+
+        &:focus,
+        &:hover {
+            background-color: invert($main-color);
+            color: $main-color;
+        }
+
+        &:focus svg,
+        &:hover svg {
+            fill: $main-color;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.icon-vkontakte,
+.icon-facebook,
+.icon-instagram {
+    display: block;
+    transition: fill $transition-delay;
+    fill: invert($main-color);
+}

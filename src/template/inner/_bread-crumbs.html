@@ -1,0 +1,13 @@
+<ul class="bread-crumbs">
+    {% for item in page.breadCrumbs %}
+    {% if loop.last %}
+    <li class="bread-crumbs__item bread-crumbs__item_active">
+        <a class="bread-crumbs__link">{{ item.title }}</a>
+    </li>
+    {% else %}
+    <li class="bread-crumbs__item">
+        <a class="bread-crumbs__link" href="{{ item.href }}">{{ item.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

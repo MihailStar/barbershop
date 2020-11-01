@@ -1,0 +1,206 @@
+.shop-filters {
+    width: 220px;
+}
+
+.filters-form {
+    &__fieldset {
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0;
+        border: none;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &__list {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+    &__item {
+        &::before {
+            content: none;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+
+        &:focus + label {
+            color: $accent-color;
+        }
+
+        &:checked + label {
+            &::before {
+                background: lighten($main-color, 97%) url(../image/sprite/sprite.png) 2px 2px no-repeat;
+            }
+        }
+
+        &:disabled + label {
+            opacity: .3;
+            cursor: auto;
+
+            &:hover {
+                color: initial;
+            }
+        }
+    }
+
+    &__checkbox-label {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        padding-left: 40px;
+        cursor: pointer;
+        transition: color $transition-delay;
+
+        &::before {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $main-color;
+            background-color: lighten($main-color, 97%);
+            content: '';
+        }
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    &__radio {
+        position: absolute;
+        opacity: 0;
+
+        &:focus + label {
+            color: $accent-color;
+        }
+
+        &:checked + label {
+            &::after {
+                display: block;
+            }
+        }
+
+        &:disabled + label {
+            opacity: .3;
+            cursor: auto;
+
+            &:hover {
+                color: initial;
+            }
+        }
+    }
+
+    &__radio-label {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 13px;
+        padding-left: 40px;
+        cursor: pointer;
+        transition: color $transition-delay;
+
+        &::before {
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 2px solid $main-color;
+            border-radius: 50%;
+            background-color: lighten($main-color, 97%);
+            content: '';
+        }
+
+        &::after {
+            position: absolute;
+            top: 8px;
+            left: 6px;
+            display: none;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $main-color;
+            content: '';
+        }
+
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.shop-catalog {
+    width: 700px;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        flex: none;
+        margin-bottom: 20px;
+        width: 220px;
+        background-color: invert($main-color);
+        box-shadow: 0 0 15px 0 rgba($main-color, .2);
+        transition: box-shadow $transition-delay;
+
+        &:hover {
+            box-shadow: 0 5px 25px 0 rgba($main-color, .3);
+        }
+    }
+
+    &__image {
+        display: block;
+        margin-bottom: 15px;
+        width: 220px;
+        height: 165px;
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding: 0 15px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: color $transition-delay;
+
+        &:focus,
+        &:hover {
+            outline: none;
+            color: $accent-color;
+        }
+    }
+
+    &__description {
+        text-transform: none;
+    }
+
+    &__price-wrapper {
+        display: flex;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    &__price {
+        flex-grow: 1;
+        padding: 10px;
+        background-color: lighten($main-color, 89.7%);
+        text-align: center;
+    }
+}

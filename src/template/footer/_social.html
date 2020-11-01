@@ -1,0 +1,8 @@
+<div class="footer__column social">
+    <div class="footer__title">Давайте дружить!</div>
+    <div class="social__links">
+        {% for item in social %}
+        <a class="button button_min social__link" href="javascript:void(0);" aria-label="{{ item.title }}">{{ mixin.icon(item.icon, '24', '24') }}</a>
+        {% endfor %}
+    </div>
+</div>

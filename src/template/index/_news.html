@@ -1,0 +1,14 @@
+<section class="index-section index-section_left">
+    <h2 class="index-section__title">Новости</h2>
+
+    <ul class="news">
+        {% for item in news %}
+        <li class="news__item">
+            <p class="news__description">{{ item.description }}</p>
+            <time class="news__time" datetime="{{ item.datetime }}">{{ item.time }}</time>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a class="button" href="javascript:void(0);">Все новости</a>
+</section>

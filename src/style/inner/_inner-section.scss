@@ -1,0 +1,75 @@
+.inner-section {
+    padding: 55px 0 35px;
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    &__promo {
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+
+        &::after {
+            position: absolute;
+            top: 24px;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            height: 2px;
+            background-color: currentColor;
+            content: '';
+        }
+    }
+
+    &__promo-title {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 25px;
+        background: lighten($main-color, 97%) url(../image/background-light.png) 0 0 repeat;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    &__table {
+        width: 100%;
+
+        & td:nth-child(1),
+        & td:nth-child(2) {
+            width: 50%;
+        }
+
+        & td:nth-child(2) {
+            text-align: center;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &__column {
+        flex: none;
+        width: 460px;
+
+        & p {
+            padding-right: 75px;
+        }
+
+        & > *:first-child {
+            margin-top: 0;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

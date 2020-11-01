@@ -1,0 +1,21 @@
+<section class="popup mfp-hide js-popup">
+    <h2 class="popup__title">Личный кабинет</h2>
+    <p class="popup__description">Введите пожалуйста свой логин и пароль</p>
+
+    <form class="login-form" action="/echo" method="post">
+        <input class="login-form__input login-form__input_login" name="login" type="text" placeholder="Логин" required>
+
+        <input class="login-form__input login-form__input_password" name="password" type="password" placeholder="Пароль" required>
+
+        <div class="login-form__row">
+            <input class="login-form__checkbox" id="login-form-checkbox" name="remember" type="checkbox" checked>
+            <label class="login-form__checkbox-label" for="login-form-checkbox">Запомните меня</label>
+
+            <a href="javascript:void(0);">Я забыл пароль!</a>
+        </div>
+
+        <button class="button button_max" type="submit">Войти</button>
+    </form>
+
+    <button class="popup__close-button js-popup-close-button" type="button" aria-label="Закрыть"></button>
+</section>

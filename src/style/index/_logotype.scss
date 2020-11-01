@@ -1,0 +1,13 @@
+.logotype {
+    display: flex;
+    margin-bottom: 25px;
+    min-height: 260px;
+    width: 100%;
+
+    &__image {
+        display: block;
+        margin: auto;
+        width: 376px;
+        height: 152px;
+    }
+}

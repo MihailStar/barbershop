@@ -1,0 +1,13 @@
+<ul class="pagination">
+    {% for i in range(1, 5) %}
+    {% if i === 2 %}
+    <li class="pagination__item pagination__item_active">
+        <a class="button button_min pagination__link">{{ i }}</a>
+    </li>
+    {% else %}
+    <li class="pagination__item">
+        <a class="button button_min pagination__link" href="javascript:void(0);">{{ i }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

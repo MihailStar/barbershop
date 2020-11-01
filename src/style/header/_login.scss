@@ -1,0 +1,29 @@
+.login {
+    &__link {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        color: inherit;
+        text-decoration: none;
+        transition: background-color $transition-delay;
+
+        &:focus,
+        &:hover {
+            outline: none;
+            background-color: lighten($main-color, 14%);
+        }
+
+        &:focus svg,
+        &:hover svg {
+            fill: invert($main-color);
+        }
+    }
+}
+
+.icon-login {
+    display: block;
+    margin-right: 10px;
+    transition: fill $transition-delay;
+    fill: lighten($main-color, 30%);
+}

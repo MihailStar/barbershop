@@ -1,0 +1,16 @@
+<section class="index-section index-section_right">
+    <h2 class="index-section__title">Фотогалерея</h2>
+
+    <div class="slider">
+        <div class="slider__slides js-slider">
+            {% for item in slides %}
+            <a class="slider__link" href="javascript:void(0);"><img class="slider__slide" src="{{ item.src }}" alt="{{ page.title }}" width="286" height="164"></a>
+            {% endfor %}
+        </div>
+
+        <div class="slider__buttons">
+            <button class="button js-slider-prev-button" type="button">Назад</button>
+            <button class="button js-slider-next-button" type="button">Вперед</button>
+        </div>
+    </div>
+</section>

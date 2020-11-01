@@ -1,0 +1,198 @@
+@import '../../node_modules/slick-carousel/slick/slick.scss';
+
+@import '../../node_modules/magnific-popup/src/css/main.scss';
+
+@import './_variable.scss';
+
+@import './_mixin.scss';
+
+* {
+    box-sizing: border-box;
+
+    &::after,
+    &::before {
+        box-sizing: border-box;
+    }
+}
+
+::selection {
+    background-color: $accent-color;
+    color: invert($main-color);
+}
+
+.body {
+    margin: 0;
+    min-width: 960px;
+    background: $main-color url(../image/background.jpg) 50% 0 no-repeat;
+    color: invert($main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 24px;
+
+    &_inner {
+        background: lighten($main-color, 97%) url(../image/background-light.png) 0 0 repeat;
+        color: $main-color;
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 940px;
+
+    &_inner {
+        display: block;
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+h2,
+h3 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+ul.extended {
+    & li {
+        margin-bottom: 10px;
+    }
+}
+
+li {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 8px;
+        left: -18px;
+        width: 8px;
+        height: 8px;
+        background-color: currentColor;
+        content: '';
+        transform: rotate(45deg);
+    }
+}
+
+table {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px 15px;
+    border: 2px solid currentColor;
+    background-color: lighten($main-color, 97%);
+}
+
+a {
+    color: inherit;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    min-width: 140px;
+    border: none;
+    background-color: $main-color;
+    color: invert($main-color);
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
+    text-transform: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition: background-color $transition-delay, color $transition-delay;
+
+    &:focus,
+    &:hover {
+        outline: none;
+        background-color: $accent-color;
+    }
+
+    &:disabled {
+        opacity: .3;
+        cursor: auto;
+
+        &:hover {
+            background-color: $main-color;
+        }
+    }
+
+    &_inline {
+        min-width: 0;
+    }
+
+    &_min {
+        padding: 10px 0;
+        min-width: 44px;
+    }
+
+    &_max {
+        width: 100%;
+    }
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+@import './header/_header.scss';
+
+@import './header/_menu.scss';
+
+@import './header/_login.scss';
+
+@import './index/_logotype.scss';
+
+@import './index/_advantages.scss';
+
+@import './index/_index-section.scss';
+
+@import './index/_news.scss';
+
+@import './index/_slider.scss';
+
+@import './index/_contacts.scss';
+
+@import './index/_booking.scss';
+
+@import './inner/_inner-section.scss';
+
+@import './inner/_bread-crumbs.scss';
+
+@import './inner/_shop.scss';
+
+@import './inner/_pagination.scss';
+
+@import './inner/_product.scss';
+
+@import './footer/_footer.scss';
+
+@import './footer/_address.scss';
+
+@import './footer/_social.scss';
+
+@import './footer/_copyright.scss';
+
+@import './_popup.scss';

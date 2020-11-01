@@ -1,0 +1,13 @@
+{% set page = pages.product %}
+
+{% extends "./template/_basis.html" %}
+
+{% block content %}
+    {% include "./template/header/_header.html" %}
+
+    {% include "./template/inner/_product.html" %}
+
+    {% include "./template/footer/_footer.html" %}
+
+    {% include "./template/_popup.html" %}
+{% endblock %}

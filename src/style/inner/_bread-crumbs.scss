@@ -1,0 +1,57 @@
+.bread-crumbs {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+    list-style-type: none;
+
+    &__item {
+        position: relative;
+        padding-right: 40px;
+
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            width: 8px;
+            height: 8px;
+            background-color: $main-color;
+            content: '';
+            transform: rotate(45deg);
+        }
+
+        &:last-child {
+            padding-right: 0;
+
+            &::after {
+                content: none;
+            }
+        }
+
+        &_active {
+            color: lighten($main-color, 67%);
+
+            .bread-crumbs__link {
+                &:focus,
+                &:hover {
+                    color: lighten($main-color, 67%);
+                }
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        transition: color $transition-delay;
+
+        &:focus,
+        &:hover {
+            outline: none;
+            color: $accent-color;
+        }
+    }
+}

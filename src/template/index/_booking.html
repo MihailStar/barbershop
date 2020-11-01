@@ -1,0 +1,15 @@
+<section class="index-section index-section_right">
+    <h2 class="index-section__title">Записаться</h2>
+
+    <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+
+    <form class="booking-form" action="/echo" method="post">
+        <div class="booking-form__inputs">
+            <input class="booking-form__input" name="date" type="text" placeholder="Дата" required>
+            <input class="booking-form__input" name="time" type="text" placeholder="Время" required>
+            <input class="booking-form__input" name="name" type="text" placeholder="Ваше имя" required>
+            <input class="booking-form__input" name="phone" type="tel" placeholder="Телефон" required>
+        </div>
+        <button class="button button_max" type="submit">Отправить</button>
+    </form>
+</section>
